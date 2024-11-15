@@ -5,20 +5,17 @@ export function createImageCarousel(){
   const buttonArr = createButton();
   let num = 1;
   createImage(num);
+  if(num > 4){
+    return;
+  }
   buttonArr[1].addEventListener('click', () => {
     console.log(num);
     num++;
-    if(num >= 4){
-      num = 4;
-    }
     createImage(num);
   })
   buttonArr[0].addEventListener('click', () => {
     console.log(num);
     num--;
-    if(num <= 1){
-      num = 1;
-    }
     createImage(num);
   })
   
@@ -35,9 +32,6 @@ function createButton(){
 }
 
 function createImage(num){
-  // if(num > 4 || num < 1){
-  //   return;
-  // }
   const imageDivElement = document.querySelector('.image-carousel-image');
   imageDivElement.innerHTML = '';
   let productImage = displayImage(`/images/image-product-${num}.jpg`);

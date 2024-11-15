@@ -8,9 +8,6 @@ export function createImageCarousel(){
   buttonArr[1].addEventListener('click', () => {
     console.log(num);
     num++;
-    if(num >= 4){
-      num = 4;
-    }
     createImage(num);
   })
   buttonArr[0].addEventListener('click', () => {

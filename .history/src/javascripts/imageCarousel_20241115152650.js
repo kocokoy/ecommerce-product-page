@@ -3,25 +3,11 @@ import {displayImage} from './image.js';
 export function createImageCarousel(){
   const imageElement = document.querySelector('.image-carousel-image');
   const buttonArr = createButton();
-  let num = 1;
-  createImage(num);
-  buttonArr[1].addEventListener('click', () => {
-    console.log(num);
-    num++;
-    if(num >= 4){
-      num = 4;
-    }
-    createImage(num);
-  })
   buttonArr[0].addEventListener('click', () => {
-    console.log(num);
-    num--;
-    if(num <= 1){
-      num = 1;
-    }
-    createImage(num);
+    console.log('test');
   })
-  
+  createImage();
+
 }
 
 function createButton(){
@@ -34,12 +20,8 @@ function createButton(){
   return [backBtnElement, forwardBtnElement];
 }
 
-function createImage(num){
-  // if(num > 4 || num < 1){
-  //   return;
-  // }
+function createImage(){
   const imageDivElement = document.querySelector('.image-carousel-image');
-  imageDivElement.innerHTML = '';
-  let productImage = displayImage(`/images/image-product-${num}.jpg`);
+  let productImage = displayImage('/images/image-product-1.jpg');
   imageDivElement.appendChild(productImage);
 }
