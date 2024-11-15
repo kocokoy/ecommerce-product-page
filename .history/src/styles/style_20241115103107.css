@@ -1,0 +1,27 @@
+:root{
+  /* ### Primary */
+--Orange: hsl(26, 100%, 55%);
+--Paleorange: hsl(25, 100%, 94%);
+/* ### Neutral */
+--Verydarkblue: hsl(220, 13%, 13%);
+--Darkgrayishblue: hsl(219, 9%, 45%);
+--Grayishblue: hsl(220, 14%, 75%);
+--Lightgrayishblue: hsl(223, 64%, 98%);
+--White: hsl(0, 0%, 100%);
+--Black: hsl(0, 0%, 0%);
+/* --Black (with 75% opacity for lightbox background): hsl(0, 0%, 0%); */
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+  margin: 0;
+  font-family:'Kumbh Sans', Arial, sans-serif; 
+}
+header{
+  border: 1px solid red;
+  min-height: 10px;
+  display: grid;
+  grid-template-columns: 100px 1fr 50px 50px;
+  align-items: center;
+  justify-items: center;
+}
