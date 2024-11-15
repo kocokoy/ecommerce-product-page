@@ -1,0 +1,18 @@
+.image-carousel{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+.image-carousel-image{
+  max-width: 300px;
+}
+.image-carousel-image img{
+  max-width: 100%;
+}
+.image-carousel-back-btn{
+  position: fixed;
+  left: 1;
+  z-index: 1;
+}

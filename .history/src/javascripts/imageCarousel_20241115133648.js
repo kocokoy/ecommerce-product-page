@@ -1,0 +1,1 @@
+import {displayImage} from './image.js';

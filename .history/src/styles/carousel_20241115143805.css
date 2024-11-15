@@ -1,0 +1,9 @@
+.image-carousel{
+  display: grid;
+  grid-template-columns: repeat(4,100px);
+  grid-template-rows: repeat(3,100px);
+}
+.image-carousel-image{
+  grid-column: 1/4;
+  z-index: 1;
+}

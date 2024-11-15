@@ -1,0 +1,14 @@
+.image-carousel{
+  display: grid;
+  min-height: 50px;
+  grid-template-columns: repeat(4,100px);
+  grid-template-rows: repeat(3,100px);
+}
+.image-carousel-image{
+  grid-column: 1/4;
+  grid-row: 1/5;
+  z-index: 1;
+}
+.image-carousel-image img{
+  width: auto;
+}
