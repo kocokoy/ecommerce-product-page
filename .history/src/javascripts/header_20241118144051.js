@@ -36,7 +36,7 @@ function headerImagesInteract(headerId){
   }
 }
 
-function closeMenuBar(menuBarElement,menu){
+function closeMenuBar(menuBarElement){
   const img = menuBarElement.querySelector('img');
   img.addEventListener('click' , () => {
     menu.remove('menu-bar-show');

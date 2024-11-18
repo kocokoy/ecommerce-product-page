@@ -3,7 +3,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  left: -500px; /* Hidden off-screen initially */
+  left: -300px; /* Hidden off-screen initially */
   width: 50%;
   background-color: var(--White);
   padding: 20px;
@@ -19,7 +19,7 @@
  margin-top: 20px;
 }
 .menu-bar-show{
-  transform: translateX(500px);
+  transform: translateX(300px);
 }
 .menu-overlay {
   position: fixed;

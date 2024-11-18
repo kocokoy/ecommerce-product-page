@@ -31,12 +31,12 @@ function headerImagesInteract(headerId){
     const menuBarElement = document.querySelector('.menu-bar');
     const menu = menuBarElement.classList;
     menu.add('menu-bar-show');
-    closeMenuBar(menuBarElement,menu);
+    closeMenuBar();
     
   }
 }
 
-function closeMenuBar(menuBarElement,menu){
+function closeMenuBar(menuBarElement){
   const img = menuBarElement.querySelector('img');
   img.addEventListener('click' , () => {
     menu.remove('menu-bar-show');

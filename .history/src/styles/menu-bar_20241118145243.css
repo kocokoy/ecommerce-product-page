@@ -1,0 +1,23 @@
+.menu-bar{
+  z-index: 100000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -300px; /* Hidden off-screen initially */
+  background-color: var(--White);
+  padding: 20px;
+  transition: transform 0.3s ease; /* Smooth transition for sliding */
+  display: block; /* Always displayed, but shifted off-screen */
+}
+
+.menu-bar img{
+  margin-bottom: 15px;
+}
+.menu-bar div{
+  font-weight: 700;
+ margin-top: 20px;
+}
+
+.menu-bar-show{
+  transform: translateX(300px);
+}

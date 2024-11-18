@@ -3,12 +3,12 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  left: -500px; /* Hidden off-screen initially */
+  left: -300px; /* Hidden off-screen initially */
   width: 50%;
   background-color: var(--White);
   padding: 20px;
   transition: transform 0.3s ease; /* Smooth transition for sliding */
-  box-shadow: 0 1px 0 130px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 1px 0 90px rgba(0, 0, 0, 0.75);;
   display: block; /* Always displayed, but shifted off-screen */
 }
 .menu-bar img{
@@ -19,7 +19,7 @@
  margin-top: 20px;
 }
 .menu-bar-show{
-  transform: translateX(500px);
+  transform: translateX(300px);
 }
 .menu-overlay {
   position: fixed;
