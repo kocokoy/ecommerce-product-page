@@ -1,0 +1,9 @@
+.cart{
+  background-color: var(--White);
+  width: 90%;
+  box-shadow: 1px 1px 1px black;
+}
+
+.cart-title{
+  padding: 10px;
+}

@@ -1,0 +1,51 @@
+
+.image-carousel{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+image{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  align-items: center;
+  border: 1px solid red;
+  width: 100px;
+}
+.image-carousel-image img{
+  width: 50px;
+  object-fit: covers;
+}
+/* .image-carousel-image{
+  max-height: 300px;
+  overflow: hidden;
+  position: relative;
+  
+}
+
+ .image-carousel-back-btn{
+  position: fixed;
+  left: 20px;
+  z-index: 1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  height: 40px;
+  width: 40px;
+}
+.image-carousel-forward-btn{
+  position: fixed;
+  right: 20px;
+  z-index: 1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  height: 40px;
+  width: 40px;
+} */
