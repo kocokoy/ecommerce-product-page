@@ -21,3 +21,16 @@
 .menu-bar-show{
   transform: translateX(500px);
 }
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+  backdrop-filter: blur(5px); /* Adds a blur effect */
+  z-index: 1000; /* Just below the menu bar */
+  opacity: 0; /* Initially hidden */
+  /* visibility: hidden; */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
