@@ -9,19 +9,17 @@ export function createHeader(){
       div.appendChild(displayImage(picts[i]));
       addIdtoHeaderImage(div,i);
     })
-
-
   }
 
 function addIdtoHeaderImage(div,i){
   div.setAttribute('data-header-id',i);
   const headerId = div.getAttribute("data-header-id");
   div.addEventListener('click', () => {
-    headerImagesInteract(headerId);
+    toggleCartContain(headerId);
   })
 }
 
-function headerImagesInteract(headerId){
+function toggleCartContain(headerId){
   if(headerId === '1'){
     const cartElement = document.querySelector('.cart');
     const cart = cartElement.classList;
@@ -29,12 +27,8 @@ function headerImagesInteract(headerId){
   }
   if(headerId === '0'){
     const menuBarElement = document.querySelector('.menu-bar');
-    const img = menuBarElement.querySelector('img');
     const menu = menuBarElement.classList;
     menu.add('menu-bar-show');
-    img.addEventListener('click' , () => {
-      menu.remove('menu-bar-show');
-    })
   }
 }
 

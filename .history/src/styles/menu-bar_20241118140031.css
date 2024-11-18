@@ -1,0 +1,6 @@
+.menu-bar{
+  z-index: 100000;
+  border: 1px solid red;
+  height: 100%;
+  width: 100%;
+}

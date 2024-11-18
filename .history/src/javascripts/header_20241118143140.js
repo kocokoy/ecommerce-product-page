@@ -31,10 +31,8 @@ function headerImagesInteract(headerId){
     const menuBarElement = document.querySelector('.menu-bar');
     const img = menuBarElement.querySelector('img');
     const menu = menuBarElement.classList;
+    console.log(img);
     menu.add('menu-bar-show');
-    img.addEventListener('click' , () => {
-      menu.remove('menu-bar-show');
-    })
   }
 }
 

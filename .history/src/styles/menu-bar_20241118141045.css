@@ -1,0 +1,18 @@
+.menu-bar{
+  z-index: 100000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 120px;
+  background-color: var(--White);
+  padding: 20px;
+}
+
+.menu-bar img{
+  margin-bottom: 40px;
+}
+.menu-bar div{
+  font-weight: 700;
+ 
+}

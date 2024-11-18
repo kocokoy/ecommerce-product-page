@@ -6,35 +6,25 @@ export function createHeader(){
   const imgDiv = document.querySelectorAll('.header-img');
   titleDiv.textContent = 'sneakers';
     imgDiv.forEach((div,i) => {
+      div.setAttribute('data-header-id',i);
       div.appendChild(displayImage(picts[i]));
-      addIdtoHeaderImage(div,i);
+      const headerId = div.getAttribute("data-header-id");
+      div.addEventListener('click', () => {
+        toggleCartContain(headerId);
+      })
     })
-
-
   }
 
-function addIdtoHeaderImage(div,i){
-  div.setAttribute('data-header-id',i);
-  const headerId = div.getAttribute("data-header-id");
-  div.addEventListener('click', () => {
-    headerImagesInteract(headerId);
-  })
-}
-
-function headerImagesInteract(headerId){
+function toggleCartContain(headerId){
   if(headerId === '1'){
     const cartElement = document.querySelector('.cart');
     const cart = cartElement.classList;
     cart.toggle('cart-show');
   }
   if(headerId === '0'){
-    const menuBarElement = document.querySelector('.menu-bar');
-    const img = menuBarElement.querySelector('img');
-    const menu = menuBarElement.classList;
-    menu.add('menu-bar-show');
-    img.addEventListener('click' , () => {
-      menu.remove('menu-bar-show');
-    })
+    const cartElement = document.querySelector('.cart');
+    const cart = cartElement.classList;
+    cart.toggle('.menu-bar-show');
   }
 }
 

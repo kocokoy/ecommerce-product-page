@@ -1,0 +1,4 @@
+.menu-bar-collapsed{
+  z-index: 100000;
+  border: 1px solid red;
+}

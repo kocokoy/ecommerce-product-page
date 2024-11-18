@@ -1,0 +1,7 @@
+.menu-bar{
+  z-index: 100000;
+  position: absolute;
+  border: 1px solid red;
+  height: 100px;
+  color: red;
+}

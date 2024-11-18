@@ -1,0 +1,9 @@
+.menu-bar{
+  z-index: 100000;
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  left: 1px;
+  right: 10px;
+  background-color: var(--White);
+}
