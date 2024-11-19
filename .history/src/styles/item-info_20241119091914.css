@@ -1,18 +1,17 @@
 .item-info{
   display: block; 
+  border: 1px solid red;
   padding: 15px;
 }
+
 .item-info .item-info-text p{
   font-weight: 700;
   font-size: 0.7rem;
   color: var(--Darkgrayishblue);
 }
+
 .item-info .item-info-text h1{
   margin:0;
-}
-.item-info .item-info-text div{
-  line-height: 25px;
-  padding-top: 15px;
 }
 
 /* PRICE */
@@ -53,11 +52,10 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--Lightgrayishblue);
-  padding: 0 20px;
-  height: 60px;
-  font-weight: 700;
-  border-radius: 10px;
+  /* background-color: var(--Lightgrayishblue); */
+  background-color: var(--Black);
+  padding: 0 10px;
+  height: 100px;
 }
 
 .item-info-quantity button{
