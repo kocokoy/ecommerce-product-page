@@ -60,7 +60,8 @@ function createProductInfoButton(){
       button.insertAdjacentElement('afterend', div);
     }
   }
-    buttonPlusMinusClicked();
+
+  buttonPlusMinusClicked();
 
 }
 

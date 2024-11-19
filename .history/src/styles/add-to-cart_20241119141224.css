@@ -1,0 +1,6 @@
+.add-to-cart-button{
+  width: 100%;
+  background-color: var(--Orange);
+  color: var(--Black);
+  border: none;
+}
