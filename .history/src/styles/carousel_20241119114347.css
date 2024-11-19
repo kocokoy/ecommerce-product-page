@@ -35,7 +35,7 @@
   width: 40px;
 }
 .image-carousel-forward-btn{
-  position: absolute;
+  position: fixed;
   right: 20px;
   z-index: 1;
   border-radius: 50%;

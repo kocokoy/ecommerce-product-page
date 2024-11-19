@@ -1,6 +1,6 @@
 
 import {displayImage} from './image.js';
-import {quantity,buttonPlusMinusClicked } from './quantityInteract.js';
+import { quantity } from './quantityInteract.js';
 export function createdProductInfo(){
   createProductInfoText();
   createProductInfoPrice();
@@ -46,11 +46,11 @@ function createProductInfoPrice(){
 function createProductInfoButton(){
   const itemInfoButtonDivElement = document.querySelector('.item-info-quantity');
   const images = ['/images/icon-minus.svg','/images/icon-plus.svg'];
-  const className = ['minus','plus'];
+  const className = ['plus','minus'];
 
   for(let i = 0; i < 2; i++){
     const button = document.createElement('button');
-    button.classList.add(className[i]);
+    button.className(className[i]);
     button.appendChild(displayImage(images[i]));
     itemInfoButtonDivElement.appendChild(button);
     if(i===0){
@@ -60,8 +60,6 @@ function createProductInfoButton(){
       button.insertAdjacentElement('afterend', div);
     }
   }
-
-  buttonPlusMinusClicked();
 
 }
 

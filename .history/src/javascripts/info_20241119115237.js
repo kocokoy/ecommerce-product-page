@@ -1,6 +1,6 @@
 
 import {displayImage} from './image.js';
-import {quantity,buttonPlusMinusClicked } from './quantityInteract.js';
+import { quantity } from './quantityInteract.js';
 export function createdProductInfo(){
   createProductInfoText();
   createProductInfoPrice();
@@ -60,8 +60,6 @@ function createProductInfoButton(){
       button.insertAdjacentElement('afterend', div);
     }
   }
-
-  buttonPlusMinusClicked();
 
 }
 
