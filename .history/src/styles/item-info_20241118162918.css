@@ -1,0 +1,17 @@
+.item-info{
+  display: block; 
+  border: 1px solid red;
+  padding: 15px;
+}
+
+.item-info .item-info-text p{
+  border: 1px solid red;
+  font-weight: 700;
+  font-size: 0.7rem;
+  color: var(--Darkgrayishblue);
+}
+
+.item-info .item-info-text h1{
+  border: 1px solid red;
+  margin: 0;
+}

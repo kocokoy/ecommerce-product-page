@@ -1,0 +1,10 @@
+.item-info{
+  display: block; 
+  border: 1px solid red;
+  padding: 15px;
+}
+
+.item-info .item-info-text p{
+  font-weight: 700;
+  font-size: 0.6rem;
+}

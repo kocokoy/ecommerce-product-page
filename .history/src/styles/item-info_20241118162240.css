@@ -1,0 +1,7 @@
+.item-info{
+  display: block; 
+  border: 1px solid red;
+  height: 1000px;
+  width: 1000px;
+  /* position: absolute; */
+}

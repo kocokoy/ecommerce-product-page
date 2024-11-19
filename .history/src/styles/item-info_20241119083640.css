@@ -1,0 +1,22 @@
+.item-info{
+  display: block; 
+  border: 1px solid red;
+  padding: 15px;
+}
+
+.item-info .item-info-text p{
+  font-weight: 700;
+  font-size: 0.7rem;
+  color: var(--Darkgrayishblue);
+}
+
+.item-info .item-info-text h1{
+  margin:0;
+}
+
+/* PRICE */
+.item-info-price{
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+}
