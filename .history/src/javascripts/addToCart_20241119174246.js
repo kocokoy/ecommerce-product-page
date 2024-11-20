@@ -26,14 +26,15 @@ function addtoCartButtonClicked(){
 }
 
 function addtoCartCountUpdate(quantity){
-  const cart = document.querySelector('.item-quantity');
+  const cart = document.querySelector('.header-cart');
+  const div = document.createElement('div');
+  div.classList.add('item-quantity');
   if(quantity === 0){
     console.log(quantity);
-    cart.classList.remove('item-quantity');
-    cart.textContent = '';
+    div.style.display = 'none';
     return;
-  }else{
-    cart.textContent = quantity;
   }
-
+    div.textContent = quantity;
+    div.style.display = 'block';
+    cart.appendChild(div);
 }

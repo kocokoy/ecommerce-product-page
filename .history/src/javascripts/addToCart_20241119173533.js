@@ -26,14 +26,13 @@ function addtoCartButtonClicked(){
 }
 
 function addtoCartCountUpdate(quantity){
-  const cart = document.querySelector('.item-quantity');
+  const cart = document.querySelector('.header-cart');
+  const div = document.createElement('div');
   if(quantity === 0){
     console.log(quantity);
-    cart.classList.remove('item-quantity');
-    cart.textContent = '';
+    div.remove();
     return;
-  }else{
-    cart.textContent = quantity;
   }
-
+    div.textContent = quantity;
+    cart.appendChild(div);
 }

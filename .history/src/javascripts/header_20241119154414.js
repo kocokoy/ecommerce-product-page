@@ -10,6 +10,7 @@ export function createHeader(){
       addIdtoHeaderImage(div,i);
     })
 
+
   }
 
 function addIdtoHeaderImage(div,i){
@@ -24,6 +25,7 @@ function headerImagesInteract(headerId){
   if(headerId === '1'){
     const cartElement = document.querySelector('.cart');
     const cart = cartElement.classList;
+    addtoCartCountUpdate();
     cart.toggle('cart-show');
   }
   if(headerId === '0'){
@@ -40,6 +42,10 @@ function closeMenuBar(menuBarElement,menu){
   img.addEventListener('click' , () => {
     menu.remove('menu-bar-show');
   })
+}
+
+function addtoCartCountUpdate(){
+  console.log('test');
 }
 
 

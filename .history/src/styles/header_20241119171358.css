@@ -35,7 +35,7 @@ header img {
   position: relative;
 }
 
-.header-cart .item-quantity{
+.header-cart div{
   position: absolute;
   top:-1px;
   right: 4px;
@@ -48,6 +48,6 @@ header img {
   border-radius: 10px;
   font-weight: 600;
   font-size: 12px;
+  /* display: none; */
 }
-
 

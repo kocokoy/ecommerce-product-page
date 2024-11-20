@@ -29,7 +29,7 @@ function addtoCartCountUpdate(quantity){
   const cart = document.querySelector('.item-quantity');
   if(quantity === 0){
     console.log(quantity);
-    cart.classList.remove('item-quantity');
+    div.classList.remove('item-quantity');
     cart.textContent = '';
     return;
   }else{

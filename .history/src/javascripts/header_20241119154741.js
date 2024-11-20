@@ -9,6 +9,7 @@ export function createHeader(){
       div.appendChild(displayImage(picts[i]));
       addIdtoHeaderImage(div,i);
     })
+    addtoCartCountUpdate();
 
   }
 
@@ -40,6 +41,11 @@ function closeMenuBar(menuBarElement,menu){
   img.addEventListener('click' , () => {
     menu.remove('menu-bar-show');
   })
+}
+
+function addtoCartCountUpdate(){
+  const test = document.querySelector('.header-cart');
+  console.log(test);
 }
 
 

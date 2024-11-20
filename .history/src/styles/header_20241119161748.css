@@ -31,23 +31,5 @@ header img {
 }
 
 .header-cart{
-  height: 30px;
-  position: relative;
+  border: 1px solid red;
 }
-
-.header-cart .item-quantity{
-  position: absolute;
-  top:-1px;
-  right: 4px;
-  color: var(--White);
-  background-color: var(--Orange);
-  width: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  font-weight: 600;
-  font-size: 12px;
-}
-
-

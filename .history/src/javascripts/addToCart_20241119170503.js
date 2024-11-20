@@ -1,5 +1,4 @@
 import { displayImage } from "./image.js";
-import { quantity } from "./infoQuantityInteract.js";
 
 
 export function createAddToCartButton(){
@@ -21,19 +20,13 @@ export function createAddToCartButton(){
 function addtoCartButtonClicked(){
   const button = document.querySelector('.add-to-cart-button');
   button.addEventListener('click', () => {
-    addtoCartCountUpdate(quantity);
+    addtoCartCountUpdate();
   })
 }
 
-function addtoCartCountUpdate(quantity){
-  const cart = document.querySelector('.item-quantity');
-  if(quantity === 0){
-    console.log(quantity);
-    cart.classList.remove('item-quantity');
-    cart.textContent = '';
-    return;
-  }else{
-    cart.textContent = quantity;
-  }
-
+function addtoCartCountUpdate(){
+  const cart = document.querySelector('.header-cart');
+  const div = document.createElement('div');
+  div.textContent = '1';
+  cart.appendChild(div);
 }

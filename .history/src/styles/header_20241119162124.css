@@ -31,17 +31,13 @@ header img {
 }
 
 .header-cart{
-  height: 30px;
-  position: relative;
+  border: 1px solid red;
 }
 
-.header-cart .item-quantity{
-  position: absolute;
-  top:-1px;
-  right: 4px;
+.header-cart div{
   color: var(--White);
   background-color: var(--Orange);
-  width: 20px;
+  width: 29px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,5 +45,3 @@ header img {
   font-weight: 600;
   font-size: 12px;
 }
-
-

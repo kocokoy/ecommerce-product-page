@@ -31,14 +31,15 @@ header img {
 }
 
 .header-cart{
+  border: 1px solid red;
   height: 30px;
   position: relative;
 }
 
-.header-cart .item-quantity{
+.header-cart div{
   position: absolute;
   top:-1px;
-  right: 4px;
+  right: -5px;
   color: var(--White);
   background-color: var(--Orange);
   width: 20px;
@@ -49,5 +50,3 @@ header img {
   font-weight: 600;
   font-size: 12px;
 }
-
-
