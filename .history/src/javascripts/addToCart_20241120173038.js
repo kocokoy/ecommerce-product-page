@@ -38,4 +38,3 @@ function addtoCartCountUpdate(quantity){
 
 
 }
-
