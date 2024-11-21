@@ -1,0 +1,69 @@
+.item-info{
+  display: block; 
+  padding: 15px;
+  border: 1px solid red;
+  width: 100%;
+}
+.item-info .item-info-text p{
+  font-weight: 700;
+  font-size: 0.7rem;
+  color: var(--Darkgrayishblue);
+}
+.item-info .item-info-text h1{
+  margin:0;
+}
+.item-info .item-info-text div{
+  line-height: 25px;
+  padding-top: 15px;
+  color: var(--Darkgrayishblue);
+}
+
+/* PRICE */
+.item-info-price{
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  align-items: center;
+  padding: 15px 0;
+}
+.item-info-price .price{
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+.item-info-price .percent{
+  background-color: var(--Black);
+  color: var(--White);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  height: 100%;
+  border-radius: 10px;
+  font-weight: 700;
+}
+.item-info-price .retail-price{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-weight: 800;
+  color: var(--Darkgrayishblue);
+  text-decoration: line-through;
+  font-size: 1.1rem;
+}
+
+/* QUANTITY */
+.item-info-quantity{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--Lightgrayishblue);
+  padding: 0 20px;
+  height: 60px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.item-info-quantity button{
+  border: none;
+  background-color: var(--Lightgrayishblue);
+}
