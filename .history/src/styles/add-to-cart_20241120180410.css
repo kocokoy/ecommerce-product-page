@@ -29,3 +29,7 @@
 }
 
 
+/* inside cart */
+.inside-cart-item{
+  border: 1px solid red;
+}

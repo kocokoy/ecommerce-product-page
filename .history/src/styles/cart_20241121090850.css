@@ -9,7 +9,7 @@
   position: absolute;
   z-index: 99999;
   top: 80px;
-  /* display: none; */
+  display: none;
 }
 
 .cart-title{

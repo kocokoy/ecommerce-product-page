@@ -51,12 +51,11 @@ function populateCart(cartContent){
   </div>
   <button>Checkout</button> `;
   cartContent.innerHTML = html;
-  deleteButtonClicked(cartContent);
 }
 
 function deleteButtonClicked(cartContent){
   const deleteButtonElement = document.querySelector('.inside-cart-item-button');
   deleteButtonElement.addEventListener('click', () => {
-    cartContent.innerHTML = 'Your cart is empty';
+    cartContent.innerHTML = '';
   })
 }

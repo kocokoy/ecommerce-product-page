@@ -26,17 +26,20 @@ function addtoCartButtonClicked(){
 }
 
 function addtoCartCountUpdate(quantity){
-  const cartContent = document.querySelector('.cart-content');
   const cart = document.querySelector('.item-quantity');
   if(quantity === 0){
+    console.log(quantity);
+    cart.classList.remove('item-quantity');
     cart.textContent = '';
-    cartContent.innerHTML = 'Your cart is empty';
     return;
-  } 
+  }
+  
   cart.textContent = quantity;
-  populateCart(cartContent);
+  populateCart();
+
 }
-function populateCart(cartContent){
+function populateCart(){
+  const cartContent = document.querySelector('.cart-content');
   const totalPrice = 125 * quantity;
   const html = `<div class="inside-cart-item">
   <img class="inside-cart-item-image" src="/images/image-product-1-thumbnail.jpg" alt="">
@@ -44,19 +47,11 @@ function populateCart(cartContent){
     <div class="inside-cart-item-info-title">Fall Limited Edition Sneakers</div>
     <div class="inside-cart-item-info-price">
       <div class="inside-cart-item-info-price-with-quantity">$125.00 x ${quantity}</div>
-      <div class="inside-cart-item-info-price-sum">$${totalPrice}.00</div>
+      <div class="inside-cart-item-info-price-sum">$${totalPrice}</div>
     </div>
   </div>
   <div class="inside-cart-item-button"><img src="/images/icon-delete.svg" alt=""></div>
   </div>
   <button>Checkout</button> `;
   cartContent.innerHTML = html;
-  deleteButtonClicked(cartContent);
-}
-
-function deleteButtonClicked(cartContent){
-  const deleteButtonElement = document.querySelector('.inside-cart-item-button');
-  deleteButtonElement.addEventListener('click', () => {
-    cartContent.innerHTML = 'Your cart is empty';
-  })
 }

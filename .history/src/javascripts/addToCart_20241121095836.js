@@ -28,7 +28,11 @@ function addtoCartButtonClicked(){
 function addtoCartCountUpdate(quantity){
   const cartContent = document.querySelector('.cart-content');
   const cart = document.querySelector('.item-quantity');
+  if(!cart){
+    console.log('test');
+  }
   if(quantity === 0){
+    cart.classList.remove('item-quantity');
     cart.textContent = '';
     cartContent.innerHTML = 'Your cart is empty';
     return;
@@ -51,12 +55,4 @@ function populateCart(cartContent){
   </div>
   <button>Checkout</button> `;
   cartContent.innerHTML = html;
-  deleteButtonClicked(cartContent);
-}
-
-function deleteButtonClicked(cartContent){
-  const deleteButtonElement = document.querySelector('.inside-cart-item-button');
-  deleteButtonElement.addEventListener('click', () => {
-    cartContent.innerHTML = 'Your cart is empty';
-  })
 }

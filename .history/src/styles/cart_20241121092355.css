@@ -9,7 +9,7 @@
   position: absolute;
   z-index: 99999;
   top: 80px;
-  /* display: none; */
+  display: none;
 }
 
 .cart-title{
@@ -52,7 +52,7 @@
 .inside-cart-item-info-price{
   display: flex;
   flex-direction: row;
-  width: 68%;
+  width: 67%;
   justify-content: space-between;
 }
 .inside-cart-item-info-price-sum{
