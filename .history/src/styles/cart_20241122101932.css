@@ -9,7 +9,8 @@
   z-index: 99999;
   top: 80px;
   right: 0px;
-  display: none;
+  /* left: 4px; */
+  /* display: none; */
 }
 
 @media (min-width:376px) {

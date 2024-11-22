@@ -8,14 +8,15 @@
   position: absolute;
   z-index: 99999;
   top: 80px;
-  right: 0px;
-  display: none;
+  left: 50%;
+  /* left: 4px; */
+  /* display: none; */
 }
 
 @media (min-width:376px) {
   .cart{
     top: 80px;
-    right: 20px;
+    
   }
 }
 

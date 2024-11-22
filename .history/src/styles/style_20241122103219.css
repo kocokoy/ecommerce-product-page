@@ -36,7 +36,5 @@ button{
   justify-content: center;
   align-items: center;
   border: 1px solid red;
-  height: 500px;
-  gap: 90px;
 }
 }

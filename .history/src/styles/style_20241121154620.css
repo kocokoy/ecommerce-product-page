@@ -29,14 +29,7 @@ button{
  cursor: pointer; 
 }
 
-@media (min-width: 930px) {
 .wrapper{
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid red;
-  height: 500px;
-  gap: 90px;
-}
 }

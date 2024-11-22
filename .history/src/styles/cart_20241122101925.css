@@ -8,8 +8,9 @@
   position: absolute;
   z-index: 99999;
   top: 80px;
-  right: 0px;
-  display: none;
+  right: 1px;
+  /* left: 4px; */
+  /* display: none; */
 }
 
 @media (min-width:376px) {
